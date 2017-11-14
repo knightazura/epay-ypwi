@@ -1,0 +1,38 @@
+/* theme color */
+$--color-primary: teal;
+
+/* icon font path, required */
+$--font-path: '../../../node_modules/element-ui/lib/theme-chalk/fonts';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/element-ui/packages/theme-chalk/src/index';
+
+body {
+  margin: 0;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.el-header {
+  height: auto !important;
+  padding: 1em;
+}
+.el-aside {
+
+  .el-menu {
+    border: 0;
+  }
+  
+  .main-aside-menu {
+    width:100%;
+  }
+}
+
+.el-main {
+  height: 100vh;
+  border-left: 1px solid rgba(70,70,70,.3);
+}
